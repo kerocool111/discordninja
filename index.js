@@ -7,10 +7,6 @@ bot.on('ready', () =>{
     console.log('This bot is online!');
 })
 
-clientInformation.login(process.env.BOT_TOKEN);
-
-Worker: node bot.js;
-
 bot.on('message', msg=>{
     if(msg.content ===  "HELLO"){
         msg.reply('Hey There!');
